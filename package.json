@@ -1,0 +1,36 @@
+{
+  "name": "practice-html-css-2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/pages/index.html",
+    "prepare": "husky install",
+    "build": "parcel build src/pages/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datmaiz/practice-html-css-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datmaiz/practice-html-css-2/issues"
+  },
+  "homepage": "https://github.com/datmaiz/practice-html-css-2#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.2",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "parcel": "^2.10.2",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4",
+    "prettier": "^3.0.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
