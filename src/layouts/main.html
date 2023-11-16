@@ -1,1 +1,524 @@
-<main>Main from main</main>
+<main>
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-wrapper">
+      <h1 class="hero-title">Explore Unique Digital Art and Collectibles</h1>
+      <p class="hero-desc">
+        Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus
+        facilisi ultrices sed faucibus proin cum ut. Eu dictum nisi facilisis
+        non habitant senectus eget sollicitudin.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-bg">
+          <span>Discover now</span>
+          <img src="../assets/icons/arrow_right.svg" alt="icon array right" />
+        </button>
+        <button class="btn">
+          <img src="../assets/icons/diamond.svg" alt="icon array right" />
+          <span>Create your own</span>
+        </button>
+      </div>
+
+      <!-- card hero - Sales -->
+      <include
+        src="./components/vertical-hero-card.html"
+        locals='{
+        "className": "desktop",
+        "number": "160k"
+      }'
+      ></include>
+      <include
+        src="./components/vertical-hero-card.html"
+        locals='{
+        "className": "mobile",
+        "number": "12k"
+      }'
+      ></include>
+
+      <!-- card hero - Users -->
+      <include
+        src="./components/horizontal-hero-card.html"
+        locals='{
+        "className": "desktop",
+        "img1": "profilePic1.png",
+        "img2": "profilePic2.png",
+        "img3": "profilePic3.png"
+      }'
+      ></include>
+      <include
+        src="./components/horizontal-hero-card.html"
+        locals='{
+        "className": "desktop",
+        "img1": "profilePic5.png",
+        "img2": "profilePic6.png",
+        "img3": "ebony.jpeg"
+      }'
+      ></include>
+    </div>
+  </section>
+
+  <!-- buttons in mobile -->
+  <section class="hero-buttons mobile">
+    <button class="btn btn-bg">
+      <span>Discover now</span>
+      <img src="../assets/icons/arrow_right.svg" alt="icon array right" />
+    </button>
+    <button class="btn">
+      <img
+        src="../assets/icons/diamond-purple.svg"
+        alt="icon array right"
+        class="primary"
+      />
+      <img
+        src="../assets/icons/diamond.svg"
+        alt="icon array right"
+        class="secondary"
+      />
+      <span>Create your own</span>
+    </button>
+  </section>
+
+  <!-- Background -->
+  <section class="group-bg group-1">
+    <figure>
+      <img src="../assets/images/desktop/clip-path-group.png" alt="bg" />
+    </figure>
+  </section>
+  <section class="group-bg radial-1">
+    <figure>
+      <img src="../assets/images/desktop/radial1.png" alt="bg" />
+    </figure>
+  </section>
+  <section class="group-bg radial-2">
+    <figure>
+      <img src="../assets/images/desktop/radial2.png" alt="bg" />
+    </figure>
+  </section>
+
+  <!-- Feature -->
+  <section class="feature">
+    <header class="feature-head">
+      <h3 class="feature-title">Featured NFTs</h3>
+      <div class="feature-navigate">
+        <img src="../assets/icons/left.svg" alt="left arrow" />
+        <img src="../assets/icons/right.svg" alt="right arrow" />
+      </div>
+    </header>
+    <main class="nft-cards">
+      <div class="nft-card">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart.svg",
+          "img": "nft_ironman.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-content">
+          <div class="nft-card-body">
+            <h4 class="name">Iron Man</h4>
+            <div class="id">
+              <figure class="images">
+                <img
+                  src="../assets/images/desktop/profilePic4.png"
+                  alt="profile pic"
+                />
+              </figure>
+              <figure class="images">
+                <img
+                  src="../assets/images/desktop/profilePic5.png"
+                  alt="profile pic"
+                />
+              </figure>
+              <span class="text"> @CosmicArtisan , @Sculptors </span>
+            </div>
+          </div>
+          <div class="nft-card-footer">
+            <div class="nft-card-pricing">
+              <p class="current-bid">Current Bid :</p>
+              <span class="pricing-left">
+                <img src="../assets/icons/currency.svg" alt="Ethereum" />
+                1.35 ETH
+              </span>
+            </div>
+            <button class="nft-card-button btn btn-bg">Place a Bid</button>
+          </div>
+        </div>
+      </div>
+      <div class="nft-card mobile">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart.svg",
+          "img": "nft_cat.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-body">
+          <h4 class="name">Feline Brushstrokes</h4>
+          <div class="id">
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic6.png"
+                alt="profile pic"
+              />
+            </figure>
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic7.png"
+                alt="profile pic"
+              />
+            </figure>
+            <span class="text"> @Robotica , @MysticInk </span>
+          </div>
+        </div>
+        <div class="nft-card-footer">
+          <div class="nft-card-pricing">
+            <p class="current-bid">Current Bid :</p>
+            <span class="pricing-left">
+              <img src="../assets/icons/currency.svg" alt="Ethereum" />
+              1.35 ETH
+            </span>
+          </div>
+          <button class="nft-card-button btn btn-bg">Place a Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart_active.svg",
+          "img": "nft_enigma.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-body">
+          <h4 class="name">Illuminated Enigma</h4>
+          <div class="id">
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic8.png"
+                alt="profile pic"
+              />
+            </figure>
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic9.png"
+                alt="profile pic"
+              />
+            </figure>
+            <span class="text"> @EtherFlow , @NanoNebula </span>
+          </div>
+        </div>
+        <div class="nft-card-footer">
+          <div class="nft-card-pricing">
+            <p class="current-bid">Current Bid :</p>
+            <span class="pricing-left">
+              <img src="../assets/icons/currency.svg" alt="Ethereum" />
+              1.35 ETH
+            </span>
+          </div>
+          <button class="nft-card-button btn btn-bg">Place a Bid</button>
+        </div>
+      </div>
+      <div class="nft-card tablet">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart.svg",
+          "img": "pint.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-body">
+          <h4 class="name">Pint-Sized Voyager</h4>
+          <div class="id">
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic6.png"
+                alt="profile pic"
+              />
+            </figure>
+            <span class="text"> @BinaryBard </span>
+          </div>
+        </div>
+        <div class="nft-card-footer">
+          <div class="nft-card-pricing">
+            <p class="current-bid">Current Bid :</p>
+            <span class="pricing-left">
+              <img src="../assets/icons/currency.svg" alt="Ethereum" />
+              1.35 ETH
+            </span>
+          </div>
+          <button class="nft-card-button btn btn-bg">Place a Bid</button>
+        </div>
+      </div>
+      <div class="nft-card tablet">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart.svg",
+          "img": "fluffed.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-body">
+          <h4 class="name">Charmingly Fluffed</h4>
+          <div class="id">
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic7.png"
+                alt="profile pic"
+              />
+            </figure>
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic12.png"
+                alt="profile pic"
+              />
+            </figure>
+            <span class="text"> @LunarArt , @Robotica </span>
+          </div>
+        </div>
+        <div class="nft-card-footer">
+          <div class="nft-card-pricing">
+            <p class="current-bid">Current Bid :</p>
+            <span class="pricing-left">
+              <img src="../assets/icons/currency.svg" alt="Ethereum" />
+              1.35 ETH
+            </span>
+          </div>
+          <button class="nft-card-button btn btn-bg">Place a Bid</button>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!-- Team -->
+  <section class="team">
+    <div class="team-wrapper">
+      <header class="team-top">
+        <h3 class="team-heading">Meet Our Talented Creators</h3>
+        <span class="team-see">see all</span>
+      </header>
+      <main class="team-cards">
+        <include
+          src="./components/team-card.html"
+          locals='{
+            "cards": [
+              {"img": "profilePic10.png", "name": "sata sculpture", "id": "@Sculptor", "number": "890 items"},
+              {"img": "profilePic5.png", "name": "cosmic art", "id": "@CosmicArtist", "number": "1004 items"},
+              {"img": "profilePic7.png", "name": "Josmin nan", "id": "@NanoNebula", "number": "990 items"},
+              {"img": "profilePic8.png", "name": "Binary Barde", "id": "@BinaryBard", "number": "1025 items"},
+              {"img": "profilePic4.png", "name": "Pixel Smith", "id": "@PixelSmithNFT", "number": "1145 items"},
+              {"img": "profilePic6.png", "name": "Art Waveze", "id": "@WavezNFT", "number": "840 items"},
+              {"img": "profilePic11.png", "name": "Ether Easel", "id": "@Ethereasel", "number": "798 items"}
+            ]
+          }'
+        ></include>
+      </main>
+    </div>
+  </section>
+
+  <!-- Explore -->
+  <section class="explore">
+    <div class="explore-frame">
+      <h3 class="explore-heading">Explore</h3>
+      <p class="explore-desc">
+        Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus
+        facilisi ultrices sed faucibus proin cum ut.
+      </p>
+      <div class="explore-func">
+        <div class="explore-categories">
+          <button class="explore-category btn btn-bg">All categories</button>
+          <button class="explore-category">Art</button>
+          <button class="explore-category">Photography</button>
+          <button class="explore-category">Virtual worlds</button>
+          <button class="explore-category">Game</button>
+        </div>
+        <button class="explore-filter">
+          Filter
+          <img src="../assets/icons/filter.svg" alt="Filter" />
+        </button>
+      </div>
+    </div>
+    <main class="nft-cards">
+      <div class="nft-card">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart.svg",
+          "img": "nft_ironman.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-content">
+          <div class="nft-card-body">
+            <h4 class="name">Iron Man</h4>
+            <div class="id">
+              <figure class="images">
+                <img
+                  src="../assets/images/desktop/profilePic4.png"
+                  alt="profile pic"
+                />
+              </figure>
+              <figure class="images">
+                <img
+                  src="../assets/images/desktop/profilePic5.png"
+                  alt="profile pic"
+                />
+              </figure>
+              <span class="text"> @CosmicArtisan , @Sculptors </span>
+            </div>
+          </div>
+          <div class="nft-card-footer">
+            <div class="nft-card-pricing">
+              <p class="current-bid">Current Bid :</p>
+              <span class="pricing-left">
+                <img src="../assets/icons/currency.svg" alt="Ethereum" />
+                1.35 ETH
+              </span>
+            </div>
+            <button class="nft-card-button btn btn-bg">Place a Bid</button>
+          </div>
+        </div>
+      </div>
+      <div class="nft-card mobile">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart.svg",
+          "img": "nft_cat.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-body">
+          <h4 class="name">Feline Brushstrokes</h4>
+          <div class="id">
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic6.png"
+                alt="profile pic"
+              />
+            </figure>
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic7.png"
+                alt="profile pic"
+              />
+            </figure>
+            <span class="text"> @Robotica , @MysticInk </span>
+          </div>
+        </div>
+        <div class="nft-card-footer">
+          <div class="nft-card-pricing">
+            <p class="current-bid">Current Bid :</p>
+            <span class="pricing-left">
+              <img src="../assets/icons/currency.svg" alt="Ethereum" />
+              1.35 ETH
+            </span>
+          </div>
+          <button class="nft-card-button btn btn-bg">Place a Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart_active.svg",
+          "img": "nft_enigma.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-body">
+          <h4 class="name">Illuminated Enigma</h4>
+          <div class="id">
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic8.png"
+                alt="profile pic"
+              />
+            </figure>
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic9.png"
+                alt="profile pic"
+              />
+            </figure>
+            <span class="text"> @EtherFlow , @NanoNebula </span>
+          </div>
+        </div>
+        <div class="nft-card-footer">
+          <div class="nft-card-pricing">
+            <p class="current-bid">Current Bid :</p>
+            <span class="pricing-left">
+              <img src="../assets/icons/currency.svg" alt="Ethereum" />
+              1.35 ETH
+            </span>
+          </div>
+          <button class="nft-card-button btn btn-bg">Place a Bid</button>
+        </div>
+      </div>
+      <div class="nft-card tablet">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart.svg",
+          "img": "pint.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-body">
+          <h4 class="name">Pint-Sized Voyager</h4>
+          <div class="id">
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic6.png"
+                alt="profile pic"
+              />
+            </figure>
+            <span class="text"> @BinaryBard </span>
+          </div>
+        </div>
+        <div class="nft-card-footer">
+          <div class="nft-card-pricing">
+            <p class="current-bid">Current Bid :</p>
+            <span class="pricing-left">
+              <img src="../assets/icons/currency.svg" alt="Ethereum" />
+              1.35 ETH
+            </span>
+          </div>
+          <button class="nft-card-button btn btn-bg">Place a Bid</button>
+        </div>
+      </div>
+      <div class="nft-card tablet">
+        <include
+          src="./components/ntfcard-image.html"
+          locals='{
+          "heart": "heart.svg",
+          "img": "fluffed.jpeg"
+        }'
+        ></include>
+        <div class="nft-card-body">
+          <h4 class="name">Charmingly Fluffed</h4>
+          <div class="id">
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic7.png"
+                alt="profile pic"
+              />
+            </figure>
+            <figure class="images">
+              <img
+                src="../assets/images/desktop/profilePic12.png"
+                alt="profile pic"
+              />
+            </figure>
+            <span class="text"> @LunarArt , @Robotica </span>
+          </div>
+        </div>
+        <div class="nft-card-footer">
+          <div class="nft-card-pricing">
+            <p class="current-bid">Current Bid :</p>
+            <span class="pricing-left">
+              <img src="../assets/icons/currency.svg" alt="Ethereum" />
+              1.35 ETH
+            </span>
+          </div>
+          <button class="nft-card-button btn btn-bg">Place a Bid</button>
+        </div>
+      </div>
+    </main>
+  </section>
+</main>
