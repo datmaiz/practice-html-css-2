@@ -1,0 +1,95 @@
+@use '../abstracts' as *;
+
+.container {
+  max-width: 192rem;
+  margin-inline: auto;
+}
+
+.body-content {
+  padding: 3.2rem 14rem;
+}
+
+.header {
+  @include between {
+    align-items: center;
+  }
+}
+
+.header-left {
+  @include center-vertical(1.6rem);
+
+  .logo-name {
+    @include font(2.8rem, 700);
+    color: $primary-color;
+  }
+
+  .search {
+    position: relative;
+  }
+
+  .search-input {
+    @include font(1.6rem, 400);
+    border: none;
+    background-color: $light-black;
+    border-radius: 8px;
+    padding: 1rem 1rem 1rem 4.5rem;
+  }
+
+  .search-icon {
+    width: 2.5rem;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.header-right {
+  @include center-vertical();
+
+  .menus {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .link {
+    @include slow;
+    color: $black;
+    padding: 1rem;
+    @include font(1.6rem, 400);
+  }
+
+  .link:hover {
+    color: $primary-color;
+  }
+
+  .noti-btn {
+    padding: 1rem;
+    background-color: $light-black;
+    border-radius: 8px;
+    margin-left: 1.2rem;
+    cursor: pointer;
+  }
+
+  .noti-icon {
+    position: relative;
+  }
+
+  .dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .auth {
+    @include center-vertical(1rem);
+    @include font(1.6rem, 400);
+    background-color: $light-black;
+    border-radius: 5rem;
+    color: $primary-color;
+    padding-left: 2.4rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+  }
+}
