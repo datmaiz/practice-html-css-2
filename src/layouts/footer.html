@@ -1,1 +1,42 @@
-<footer>Footer from footer</footer>
+<footer class="footer">
+  <section class="footer-wrapper">
+    <div class="footer-top">
+      <figure class="footer-logo">
+        <img src="../assets/icons/logo.svg" alt="logo" />
+        <figcaption class="footer-logo-name">NFT logoplace</figcaption>
+      </figure>
+      <div class="footer-socials">
+        <include
+          src="./components/footer-socials.html"
+          locals='{
+          "images": "[`instagram.svg`, `twitter.svg`, `linkin.svg`, `youtube.svg`]"
+        }'
+        ></include>
+      </div>
+    </div>
+    <div class="footer-content">
+      <p class="footer-desc">
+        Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus
+        facilisi ultrices sed faucibus proin cum ut.
+      </p>
+      <div class="footer-explore footer-item">
+        <h4 class="name">Explore</h4>
+        <ul class="footer-explore-list">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">Collection</a></li>
+          <li><a href="#" class="footer-link">Conect a Wallet</a></li>
+          <li><a href="#" class="footer-link">Ranking</a></li>
+        </ul>
+      </div>
+      <div class="footer-links footer-item">
+        <h4 class="name">Links</h4>
+        <ul class="footer-explore-list">
+          <li><a href="#" class="footer-link">Blog</a></li>
+          <li><a href="#" class="footer-link">Contact</a></li>
+          <li><a href="#" class="footer-link">FAQ's</a></li>
+          <li><a href="#" class="footer-link">About us</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</footer>
