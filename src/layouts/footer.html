@@ -19,24 +19,20 @@
         Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus
         facilisi ultrices sed faucibus proin cum ut.
       </p>
-      <div class="footer-explore footer-item">
-        <h4 class="name">Explore</h4>
-        <ul class="footer-explore-list">
-          <li><a href="#" class="footer-link">Home</a></li>
-          <li><a href="#" class="footer-link">Collection</a></li>
-          <li><a href="#" class="footer-link">Conect a Wallet</a></li>
-          <li><a href="#" class="footer-link">Ranking</a></li>
-        </ul>
-      </div>
-      <div class="footer-links footer-item">
-        <h4 class="name">Links</h4>
-        <ul class="footer-explore-list">
-          <li><a href="#" class="footer-link">Blog</a></li>
-          <li><a href="#" class="footer-link">Contact</a></li>
-          <li><a href="#" class="footer-link">FAQ's</a></li>
-          <li><a href="#" class="footer-link">About us</a></li>
-        </ul>
-      </div>
+      <include
+        src="./components/footer-items.html"
+        locals='{
+        "name": "Explore",
+        "links": "[`Home`, `Collection`, `Conect a Wallet`, `Ranking`]"
+      }'
+      ></include>
+      <include
+        src="./components/footer-items.html"
+        locals='{
+        "name": "Links",
+        "links": "[`Blog`, `Contact`, `FAQs`, `About us`]"
+      }'
+      ></include>
     </div>
   </section>
 </footer>
