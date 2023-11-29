@@ -78,13 +78,6 @@
     </button>
   </section>
 
-  <!-- Background -->
-  <section class="group-bg group-1">
-    <figure>
-      <img src="../assets/images/desktop/clip-path-group.png" alt="bg" />
-    </figure>
-  </section>
-
   <!-- Feature -->
   <section class="feature">
     <header class="feature-head">
@@ -133,13 +126,22 @@
             <button class="nft-card-button btn btn-bg">Place a Bid</button>
           </div>
         </div>
+        <button class="explore-filter">
+          Filter
+          <img src="../assets/icons/filter.svg" alt="Filter" />
+        </button>
       </div>
       <div class="nft-card mobile">
         <include
           src="./components/ntfcard-image.html"
           locals='{
           "heart": "heart.svg",
-          "img": "nft_cat.jpeg"
+          "img": "nft_ironman.jpeg",
+          "avt1": "profilePic4.png",
+          "avt2": "profilePic5.png",
+          "text": "@CosmicArtisan , @Sculptor",
+          "price": "1.35",
+          "className": "mobile"
         }'
         ></include>
         <div class="nft-card-body">
@@ -215,67 +217,118 @@
           "heart": "heart.svg",
           "img": "pint.jpeg"
         }'
-        ></include>
-        <div class="nft-card-body">
-          <h4 class="name">Pint-Sized Voyager</h4>
-          <div class="id">
-            <figure class="images">
-              <img
-                src="../assets/images/desktop/profilePic6.png"
-                alt="profile pic"
-              />
-            </figure>
-            <span class="text"> @BinaryBard </span>
-          </div>
-        </div>
-        <div class="nft-card-footer">
-          <div class="nft-card-pricing">
-            <p class="current-bid">Current Bid :</p>
-            <span class="pricing-left">
-              <img src="../assets/icons/currency.svg" alt="Ethereum" />
-              1.35 ETH
-            </span>
-          </div>
-          <button class="nft-card-button btn btn-bg">Place a Bid</button>
-        </div>
-      </div>
-      <div class="nft-card tablet">
-        <include
-          src="./components/ntfcard-image.html"
-          locals='{
-          "heart": "heart.svg",
-          "img": "fluffed.jpeg"
+      ></include>
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Pint-Sized Voyager",
+            "heart": "heart.svg",
+            "img": "pint.jpeg",
+            "avt1": "profilePic6.png",
+            "avt2": "",
+            "text": "@BinaryBard",
+            "price": "1.87",
+          "className": "tablet"
+          }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Charmingly Fluffed",
+            "heart": "heart.svg",
+            "img": "fluffed.jpeg",
+            "avt1": "profilePic7.png",
+            "avt2": "profilePic12.png",
+            "text": "@LunarArt , @Robotica",
+            "price": "2.32",
+          "className": "tablet"
         }'
-        ></include>
-        <div class="nft-card-body">
-          <h4 class="name">Charmingly Fluffed</h4>
-          <div class="id">
-            <figure class="images">
-              <img
-                src="../assets/images/desktop/profilePic7.png"
-                alt="profile pic"
-              />
-            </figure>
-            <figure class="images">
-              <img
-                src="../assets/images/desktop/profilePic12.png"
-                alt="profile pic"
-              />
-            </figure>
-            <span class="text"> @LunarArt , @Robotica </span>
-          </div>
-        </div>
-        <div class="nft-card-footer">
-          <div class="nft-card-pricing">
-            <p class="current-bid">Current Bid :</p>
-            <span class="pricing-left">
-              <img src="../assets/icons/currency.svg" alt="Ethereum" />
-              1.35 ETH
-            </span>
-          </div>
-          <button class="nft-card-button btn btn-bg">Place a Bid</button>
-        </div>
-      </div>
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Rosa Vista Realm",
+            "heart": "heart.svg",
+            "img": "rosa.png",
+            "avt1": "profilePic4.png",
+            "avt2": "profilePic5.png",
+            "text": "@CosmicArtisan , @Sculptor",
+            "price": "1.35",
+          "className": "mobile"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Gilded Ebony",
+            "heart": "heart.svg",
+            "img": "ebony.jpeg",
+            "avt1": "profilePic6.png",
+            "avt2": "profilePic7.png",
+            "text": "@Robotica , @MysticInk",
+            "price": "1.68",
+          "className": "mobile"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Hazy Hue Wolf",
+            "heart": "heart.svg",
+            "img": "hazy.jpeg",
+            "avt1": "profilePic8.png",
+            "avt2": "profilePic9.png",
+            "text": "@EtherFlow , @NanoNebula",
+            "price": "2.05",
+          "className": "desktop"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Pint-Sized Voyager",
+            "heart": "heart.svg",
+            "img": "voyater.jpeg",
+            "avt1": "profilePic6.png",
+            "avt2": "",
+            "text": "@BinaryBard",
+            "price": "1.87",
+          "className": "tablet"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Poker",
+            "heart": "heart_active.svg",
+            "img": "poker.jpeg",
+            "avt1": "profilePic7.png",
+            "avt2": "profilePic12.png",
+            "text": "@LunarArt , @Robotica",
+            "price": "2.32",
+          "className": "tablet"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+          "name": "Illuminated Enigma",
+          "heart": "heart_active.svg",
+          "img": "nft_enigma.jpeg",
+          "avt1": "profilePic8.png",
+          "avt2": "profilePic9.png",
+          "text": "@EtherFlow , @NanoNebula",
+          "price": "2.05",
+          "className": "hide"
+        }'
+      ></include>
     </main>
   </section>
 </main>
