@@ -34,113 +34,23 @@
   margin-top: 2.4rem;
   display: flex;
   gap: 2.4rem;
+  background-color: $white;
+  border-radius: 1.5rem;
 
-  .nft-card {
-    @include slow;
-    border: 1px solid transparent;
-    padding: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    cursor: pointer;
-    border-radius: 1.5rem;
+  @include xxl {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .nft-card:hover {
-    border-color: $primary-color;
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    background-color: transparent;
+    gap: 1.2rem;
   }
 
-  .nft-card-img {
-    max-width: 30rem;
-    height: 21rem;
-    position: relative;
-  }
-
-  .heart,
-  .timer {
-    position: absolute;
-    top: 1rem;
-    background-color: $white;
-    border-radius: 2rem;
-    padding: 4px;
-  }
-
-  .heart {
-    left: 1rem;
-  }
-
-  .timer {
-    @include font(12px, 400);
-    @include center-vertical(2px);
-    right: 1rem;
-    color: $primary-color;
-  }
-
-  .main-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-
-  .nft-card-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
-  .nft-card-body {
-    @include between;
-    flex-direction: column;
-    flex: 1;
-    margin-top: 1rem;
-    gap: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid $light-black;
-  }
-
-  .name {
-    @include font(2.1rem, 600);
-    color: $primary-color;
-    line-height: 1.6;
-  }
-
-  .id {
-    @include center-vertical();
-    @include font(12px, 400);
-    width: 100%;
-  }
-
-  .images {
-    width: 27px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-  }
-
-  .images:nth-child(2) {
-    transform: translateX(-30%);
-  }
-
-  .nft-card-footer {
-    @include between;
-    align-items: end;
-    padding-top: 1rem;
-  }
-
-  .current-bid {
-    @include font(12px, 400);
-    color: $text-grey;
-    margin-bottom: 1rem;
-  }
-
-  .pricing-left {
-    @include center-vertical(8px);
-    @include font(12px, 400);
-  }
-
-  .nft-card-button {
-    @include font(12px, 400);
-    padding: 8px 12px;
-    border-radius: 1.5rem;
+  @include sm {
+    grid-template-columns: 1fr;
   }
 }
