@@ -1,0 +1,14 @@
+<each loop="card in {{ cards }}">
+  <div class="team-card">
+    <figure class="img-wrapper">
+      <img
+        src="../assets/images/desktop/{{ card.img }}"
+        alt="profile pic"
+        class="img"
+      />
+      <figcaption class="name">{{ card.name }}</figcaption>
+    </figure>
+    <p class="id">{{ card.id }}</p>
+    <p class="number">{{ card.number }}</p>
+  </div>
+</each>

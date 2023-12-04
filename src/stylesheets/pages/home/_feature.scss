@@ -1,15 +1,5 @@
 @use '../../abstracts/' as *;
 
-.group-bg {
-  position: absolute;
-  z-index: -1;
-}
-
-.group-bg.group-1 {
-  transform: translateY(-45%);
-  right: 0;
-}
-
 .feature {
   margin-top: 6.4rem;
 }
@@ -28,11 +18,37 @@
     @include center-vertical;
     cursor: pointer;
   }
+
+  @include xxl {
+    .feature-title {
+      font-size: 2.8rem;
+    }
+  }
+
+  @include md {
+    .feature-navigate {
+      img {
+        display: none;
+      }
+    }
+
+    .feature-navigate:before {
+      @include font(1.2rem, 400);
+      content: 'See more';
+      display: inline-block;
+      color: $primary-color;
+    }
+
+    .feature-navigate:hover:before {
+      text-decoration: underline;
+    }
+  }
 }
 
 .nft-cards {
   margin-top: 2.4rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 2.4rem;
   background-color: $white;
   border-radius: 1.5rem;
@@ -48,6 +64,35 @@
     margin-inline: auto;
     background-color: transparent;
     gap: 1.2rem;
+  }
+
+  @include sm {
+    grid-template-columns: 1fr;
+  }
+
+  @include xxl {
+    grid-template-columns: repeat(3, 1fr);
+
+    .tablet {
+      display: none;
+    }
+  }
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    background-color: transparent;
+    gap: 1.2rem;
+
+    .mobile {
+      display: none;
+    }
+
+    .nft-card-img {
+      width: 100%;
+    }
   }
 
   @include sm {
