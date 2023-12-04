@@ -1,0 +1,59 @@
+@use '../abstracts/' as *;
+
+.footer {
+  background-color: $footer-bg;
+}
+
+.footer-wrapper {
+  padding: 8.6rem 14rem;
+  color: $light-black;
+
+  .footer-top {
+    @include between;
+    align-items: center;
+    padding-bottom: 3.2rem;
+    border-bottom: 1px solid $light-black;
+  }
+
+  .footer-logo {
+    @include center-vertical(1.6rem);
+    @include font(2.8rem, 700);
+    color: $primary-color;
+  }
+
+  .footer-socials {
+    @include center-vertical(2.4rem);
+  }
+
+  .footer-content {
+    @include between;
+    flex-wrap: wrap;
+    padding-top: 3.2rem;
+    gap: 2.5rem;
+  }
+
+  .footer-desc {
+    @include font(1.6rem, 400);
+    max-width: 37rem;
+    flex-basis: 37rem;
+    line-height: 1.6;
+  }
+
+  .name {
+    @include font(2.1rem, 700);
+    color: $primary-color;
+    line-height: 1.5;
+  }
+
+  .footer-link {
+    @include font(1.4rem, 400);
+    @include slow;
+    color: $light-black;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
+  .footer-link:hover {
+    color: $primary-color;
+  }
+}

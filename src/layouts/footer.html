@@ -1,1 +1,38 @@
-<footer>Footer from footer</footer>
+<footer class="footer">
+  <section class="footer-wrapper">
+    <div class="footer-top">
+      <figure class="footer-logo">
+        <img src="../assets/icons/logo.svg" alt="logo" />
+        <figcaption class="footer-logo-name">NFT logoplace</figcaption>
+      </figure>
+      <div class="footer-socials">
+        <include
+          src="./components/footer-socials.html"
+          locals='{
+          "images": "[`instagram.svg`, `twitter.svg`, `linkin.svg`, `youtube.svg`]"
+        }'
+        ></include>
+      </div>
+    </div>
+    <div class="footer-content">
+      <p class="footer-desc">
+        Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus
+        facilisi ultrices sed faucibus proin cum ut.
+      </p>
+      <include
+        src="./components/footer-items.html"
+        locals='{
+        "name": "Explore",
+        "links": "[`Home`, `Collection`, `Conect a Wallet`, `Ranking`]"
+      }'
+      ></include>
+      <include
+        src="./components/footer-items.html"
+        locals='{
+        "name": "Links",
+        "links": "[`Blog`, `Contact`, `FAQs`, `About us`]"
+      }'
+      ></include>
+    </div>
+  </section>
+</footer>
