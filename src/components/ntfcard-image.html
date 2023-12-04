@@ -1,4 +1,4 @@
-<figure class="nft-card-img">
+<!-- <figure class="nft-card-img">
   <img src="../assets/icons/{{ heart }}" alt="heart" class="heart" />
   <span class="timer">
     <img src="../assets/icons/clock.svg" alt="clock" />
@@ -9,4 +9,48 @@
     alt="image"
     class="main-image"
   />
-</figure>
+</figure> -->
+
+<div class="nft-card">
+  <figure class="nft-card-img">
+    <img src="../assets/icons/{{ heart }}" alt="heart" class="heart" />
+    <span class="timer">
+      <img src="../assets/icons/clock.svg" alt="clock" />
+      2h:24m:04s
+    </span>
+    <img
+      src="../assets/images/desktop/{{ img }}"
+      alt="image"
+      class="main-image"
+    />
+  </figure>
+  <div class="nft-card-content">
+    <div class="nft-card-body">
+      <h4 class="name"></h4>
+      <div class="id">
+        <figure class="images">
+          <img src="../assets/images/desktop/{{ avt1 }}" alt="profile pic" />
+        </figure>
+        <if condition="avt2 !== ''">
+          <figure class="images">
+            <img
+              src="../assets/images/desktop/profilePic5.png"
+              alt="profile pic"
+            />
+          </figure>
+        </if>
+        <span class="text"> {{ text }} </span>
+      </div>
+    </div>
+    <div class="nft-card-footer">
+      <div class="nft-card-pricing">
+        <p class="current-bid">Current Bid :</p>
+        <span class="pricing-left">
+          <img src="../assets/icons/currency.svg" alt="Ethereum" />
+          {{ price }} ETH
+        </span>
+      </div>
+      <button class="nft-card-button btn btn-bg">Place a Bid</button>
+    </div>
+  </div>
+</div>
