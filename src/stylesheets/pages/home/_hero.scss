@@ -2,6 +2,8 @@
 
 body {
   background-image: url(../assets/images/desktop/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include xl {
     background-image: url(../assets/images/tablet/bg.png);
