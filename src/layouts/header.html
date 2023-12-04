@@ -1,1 +1,35 @@
-<header>Header from header</header>
+<header class="header">
+  <div class="header-left">
+    <img src="../assets/icons/logo.svg" alt="logo" />
+    <h3 class="logo-name">NFT logoplace</h3>
+    <div class="search">
+      <input type="text" class="search-input" placeholder="search" />
+      <img
+        src="../assets/icons/search.svg"
+        alt="seach icon"
+        class="search-icon"
+      />
+    </div>
+  </div>
+  <div class="header-right">
+    <include
+      src="./components/menus.html"
+      locals='{
+      "menus": "[`Home`, `Brows`, `Create`, `MyNFT`]"
+    }'
+    ></include>
+    <div class="noti-btn">
+      <figure class="noti-icon">
+        <img src="../assets/icons/noti.svg" alt="noti icon" />
+        <img src="../assets/icons/dot.svg" alt="dot" class="dot" />
+      </figure>
+    </div>
+    <figure class="auth">
+      <figcaption>Account</figcaption>
+      <img
+        src="../assets/images/desktop/account_profilePic.png"
+        alt="account image"
+      />
+    </figure>
+  </div>
+</header>

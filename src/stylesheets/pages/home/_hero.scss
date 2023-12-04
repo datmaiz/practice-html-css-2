@@ -1,0 +1,148 @@
+@use '../../abstracts/' as *;
+
+.hero {
+  margin-top: 6.4rem;
+  padding: 4.8rem;
+  color: $white;
+  background-image: url(../assets/images/desktop/hero_bg.png), linear-gradient(to right, #000, #fff);
+  background-size: cover;
+  background-position: center 70%;
+  border-radius: 2.4rem;
+}
+
+.hero-wrapper {
+  @include center-horizontal(2.4rem);
+  flex-direction: column;
+  padding-block: 6rem;
+  position: relative;
+
+  .hero-title {
+    @include font(5.6rem, 800);
+    max-width: 84.7rem;
+    line-height: 6.1rem
+  }
+
+  .hero-desc {
+    @include font(1.6rem, 400);
+    max-width: 53.3rem;
+    line-height: 1.5;
+  }
+
+  .hero-buttons {
+    @include center-vertical(2.4rem);
+    @include font(1.6rem, 400);
+  }
+
+  .btn {
+    @include slow;
+    border-radius: 2.4rem;
+    padding: 1rem 2.4rem;
+  }
+
+  .btn:last-child {
+    border: 1px solid $white;
+  }
+
+  .btn:last-child:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  .hero-card {
+    position: absolute;
+    background-color: #67696f80;
+    padding: 1rem 2.4rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .hero-card.sale {
+    top: 0;
+    right: 5%;
+    border-radius: 1.5rem;
+  }
+
+  .hero-card.user {
+    @include between();
+    border-radius: 5rem;
+    right: 12%;
+    bottom: 5rem;
+    box-sizing: border-box;
+  }
+
+  .hero-card-images {
+    @include center-vertical();
+    width: max-content;
+
+    .hero-card-image:nth-child(2) {
+      transform: translateX(-50%);
+    }
+
+    .hero-card-image:last-child {
+      transform: translateX(-100%);
+    }
+  }
+
+  .hero-card-image {
+    display: inline-block;
+    max-width: 44px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%
+  }
+
+  .hero-card-number {
+    @include font(2.8rem, 700);
+  }
+
+  .hero-card-name {
+    @include font(1.6rem, 400);
+  }
+
+  .hero-card.mobile {
+    display: none;
+  }
+}
+
+.hero-buttons.mobile {
+  @include font(1.2rem, 400);
+  margin-top: 12px;
+  display: none;
+
+  .btn {
+    border-radius: 2.4rem;
+    padding: 8px 12px;
+  }
+
+  .btn:last-child {
+    @include slow;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+
+  .btn:last-child:hover {
+    background-color: $primary-color;
+    color: $white;
+
+    .secondary {
+      opacity: 1;
+      display: inline-block;
+    }
+
+    .primary {
+      display: none;
+      opacity: 0;
+    }
+  }
+
+  img {
+    @include slow;
+    width: 12px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .secondary {
+    opacity: 0;
+    display: none;
+  }
+}
