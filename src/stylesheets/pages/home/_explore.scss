@@ -1,95 +1,113 @@
-@use '../../abstracts/' as *;
+@use "../../abstracts/" as *;
+@use "../../components/" as *;
 
-.team {
+.explore {
   margin-top: 6.4rem;
+
+  .btn-wrapper {
+    display: block;
+    text-align: center;
+
+    .load-more {
+      @extend .btn;
+      @include font(1.6rem, 400);
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      border-radius: 2.4rem;
+      padding: 1rem 2.4rem;
+      margin-top: 3.2rem;
+    }
+  }
+
+  @include xs {
+    .load-more {
+      @include center-element;
+      width: 100%;
+    }
+  }
 }
 
-.team-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 4.3rem;
+.explore-frame {
+  .explore-heading {
+    @include font(3.7rem, 700);
+  }
 
-  .team-top {
+  .explore-func,
+  .explore-desc {
+    line-height: 1.5;
+    margin-top: 2.4rem;
+  }
+
+  .explore-desc {
+    @include font(1.6rem, 400);
+  }
+
+  .explore-func {
     @include between;
     align-items: center;
   }
 
-  .team-heading {
-    @include font(3.7rem, 700);
+  .explore-category,
+  .explore-filter {
+    @include font(1.6rem, 400);
+    @include slow;
+    border-radius: 2.4rem;
+    border: 1px solid $primary-color;
   }
 
-  .team-see {
-    @include font(1.6rem, 400);
-    color: $primary-color;
-    text-transform: capitalize;
-    cursor: pointer;
+  .explore-categories {
+    @include center-vertical(1.2rem);
+  }
 
-    &:hover {
-      text-decoration: underline;
+  .explore-category {
+    padding: 8px 16px;
+  }
+
+  .explore-category:not(:first-child) {
+    color: $primary-color;
+  }
+
+  .explore-category:not(:first-child):hover {
+    color: $white;
+    background-color: $primary-color;
+  }
+
+  .explore-filter {
+    @extend .btn;
+    @extend .btn-bg;
+    padding: 1rem 2.4rem;
+  }
+
+  @include lg {
+    .explore-heading {
+      font-size: 2.8rem;
+    }
+
+    .explore-func {
+      justify-content: end;
+    }
+
+    .explore-categories {
+      display: none;
+      justify-self: end;
     }
   }
 
-  .team-cards {
-    display: flex;
-    gap: 1.5rem;
-    counter-reset: team_card;
-  }
+  @include sm {
+    .explore-heading {
+      font-size: 1.6rem;
+    }
 
-  .team-card {
-    @include center-vertical(4px);
-    @include slow;
-    counter-increment: team_card;
-    flex-direction: column;
-    flex: 1;
-    cursor: pointer;
-    position: relative;
-    padding: 1.2rem;
-    border: 1px solid $light-black;
-    border-radius: 1.5rem;
+    .explore-desc {
+      font-size: 1.4rem;
+    }
   }
+}
 
-  .team-card:hover {
-    border-color: $primary-color;
-  }
+.nft-cards .nft-card.hide {
+  display: none;
 
-  .team-card::before {
-    @include font(1.2rem, 400);
-    content: counter(team_card);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $white;
-    background-color: $light-purple;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.4rem;
-    height: 2.4rem;
-    border-radius: 50%;
-  }
-
-  .img-wrapper {
-    text-align: center;
-  }
-
-  .img {
-    display: inline-block;
-    width: 6.2rem;
-  }
-
-  .name {
-    @include font(2.1rem, 700);
-    line-height: 1.6;
-    text-transform: capitalize
-  }
-
-  .id,
-  .number {
-    @include font(1.2rem, 400);
-  }
-
-  .number {
-    color: $primary-color;
+  @include sm {
+    display: block;
   }
 }
