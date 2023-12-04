@@ -84,6 +84,16 @@
       <img src="../assets/images/desktop/clip-path-group.png" alt="bg" />
     </figure>
   </section>
+  <section class="group-bg radial-1">
+    <figure>
+      <img src="../assets/images/desktop/radial1.png" alt="bg" />
+    </figure>
+  </section>
+  <section class="group-bg radial-2">
+    <figure>
+      <img src="../assets/images/desktop/radial2.png" alt="bg" />
+    </figure>
+  </section>
 
   <!-- Feature -->
   <section class="feature">
@@ -277,5 +287,31 @@
         </div>
       </div>
     </main>
+  </section>
+
+  <!-- Team -->
+  <section class="team">
+    <div class="team-wrapper">
+      <header class="team-top">
+        <h3 class="team-heading">Meet Our Talented Creators</h3>
+        <span class="team-see">see all</span>
+      </header>
+      <main class="team-cards">
+        <include
+          src="./components/team-card.html"
+          locals='{
+            "cards": [
+              {"img": "profilePic10.png", "name": "sata sculpture", "id": "@Sculptor", "number": "890 items"},
+              {"img": "profilePic5.png", "name": "cosmic art", "id": "@CosmicArtist", "number": "1004 items"},
+              {"img": "profilePic7.png", "name": "Josmin nan", "id": "@NanoNebula", "number": "990 items"},
+              {"img": "profilePic8.png", "name": "Binary Barde", "id": "@BinaryBard", "number": "1025 items"},
+              {"img": "profilePic4.png", "name": "Pixel Smith", "id": "@PixelSmithNFT", "number": "1145 items"},
+              {"img": "profilePic6.png", "name": "Art Waveze", "id": "@WavezNFT", "number": "840 items"},
+              {"img": "profilePic11.png", "name": "Ether Easel", "id": "@Ethereasel", "number": "798 items"}
+            ]
+          }'
+        ></include>
+      </main>
+    </div>
   </section>
 </main>
