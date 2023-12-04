@@ -10,6 +10,14 @@
   right: 0;
 }
 
+.group-bg.radial-1 {
+  left: 0;
+}
+
+.group-bg.radial-2 {
+  right: 0;
+}
+
 .feature {
   margin-top: 6.4rem;
 }
@@ -57,7 +65,8 @@
 
 .nft-cards {
   margin-top: 2.4rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 2.4rem;
   background-color: $white;
   border-radius: 1.5rem;

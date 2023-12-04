@@ -22,6 +22,14 @@ body {
   background-size: cover;
   background-position: center 70%;
   border-radius: 2.4rem;
+
+  @include md {
+    padding: 3.2rem;
+  }
+
+  @include sm {
+    margin-top: 2.2rem;
+  }
 }
 
 .hero-wrapper {
@@ -116,6 +124,80 @@ body {
   .hero-card.mobile {
     display: none;
   }
+
+  @include xxl {
+    .hero-card.sale {
+      right: 0;
+      bottom: 0;
+      top: auto;
+    }
+
+    .hero-card.user {
+      left: 5%;
+      top: 100%;
+      right: auto;
+      bottom: auto;
+    }
+
+    .hero-title {
+      font-size: 4.3rem;
+    }
+  }
+
+  @include md {
+    padding: 0;
+
+    .hero-title {
+      font-size: 2.1rem;
+      line-height: 1.5;
+    }
+
+    .hero-card.desktop {
+      display: none;
+    }
+
+    .hero-card.sale.mobile {
+      display: block;
+      bottom: auto;
+      top: 0;
+      padding: 4px 12px;
+    }
+
+    .hero-card.user.mobile {
+      display: inline-flex;
+      width: fit-content;
+      bottom: 0;
+      top: auto;
+      position: relative;
+      padding: 4px 19px;
+    }
+
+    .hero-card-number {
+      font-size: 2.1rem;
+    }
+
+    .hero-card-name {
+      font-size: 12px;
+    }
+
+    .hero-card-image {
+      max-width: 3.2rem;
+    }
+
+    .hero-title,
+    .hero-desc {
+      max-width: 65%;
+      word-wrap: break-word;
+    }
+
+    .hero-desc {
+      font-size: 14px;
+    }
+
+    .hero-buttons {
+      display: none;
+    }
+  }
 }
 
 .hero-buttons.mobile {
@@ -158,5 +240,12 @@ body {
   .secondary {
     opacity: 0;
     display: none;
+  }
+}
+
+@include md {
+  .hero-buttons.mobile {
+    display: flex;
+    gap: 12px;
   }
 }
