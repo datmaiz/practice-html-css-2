@@ -80,13 +80,17 @@
 
   .name {
     @include font(2.1rem, 700);
-    line-height: 1.6;
+    line-height: 1.2;
     text-transform: capitalize
   }
 
   .id,
   .number {
     @include font(1.2rem, 400);
+  }
+
+  .id {
+    margin-top: auto;
   }
 
   .number {
