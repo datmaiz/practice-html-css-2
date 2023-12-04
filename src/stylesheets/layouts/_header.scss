@@ -25,6 +25,10 @@
 
   .search {
     position: relative;
+
+    @include xxl {
+      display: none;
+    }
   }
 
   .search-input {
@@ -91,5 +95,21 @@
     padding-left: 2.4rem;
     margin-left: 1.2rem;
     cursor: pointer;
+  }
+
+  @include xxl {
+    display: none;
+  }
+}
+
+.menu-icon {
+  background-color: $light-black;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+
+  @include xxl {
+    display: block;
   }
 }
