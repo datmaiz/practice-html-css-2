@@ -1,10 +1,17 @@
 $media: (
+  'xxl': 1420px,
   'xl': 1280px,
   'lg': 992px,
   'md': 768px,
   'sm': 576px,
   'xs': 320px
 );
+
+@mixin xxl {
+  @media screen and (max-width: map-get($media, 'xxl')) {
+    @content;
+  }
+}
 
 @mixin xl {
   @media screen and (max-width: map-get($media, 'xl')) {

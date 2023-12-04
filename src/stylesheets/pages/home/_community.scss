@@ -1,0 +1,74 @@
+@use '../../abstracts/' as *;
+@use '../../components/' as *;
+
+.community {
+  margin-top: 6.4rem;
+  box-shadow: 0px 4px 8px 0px rgba(134, 106, 250, 0.40);
+  border-radius: 2.4rem;
+}
+
+.community-wrapper {
+  @include center-vertical(3.2rem);
+  padding: 6.8rem;
+
+  .community-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .community-image {
+    flex-shrink: 0
+  }
+
+  .community-heading {
+    @include font(4.3rem, 800);
+    color: $primary-color;
+  }
+
+  .community-desc {
+    @include font(1.6rem, 400);
+    line-height: 1.5;
+    padding: 1rem;
+  }
+
+  .community-input {
+    @include between;
+    background-color: $light-black;
+    max-width: 42.5rem;
+    border-radius: 8px;
+    padding-left: 1rem;
+  }
+
+  .community-field {
+    border: none;
+    background: transparent;
+  }
+
+  .community-button {
+    @include font(1.6rem, 400);
+    @extend .btn;
+    @extend .btn-bg;
+    padding: 1rem 2.4rem;
+    border-radius: 8px;
+    line-height: 1.5;
+  }
+
+  // .community-input {
+  //   flex-direction: column;
+  //   padding: 0;
+  //   gap: 12px;
+  //   background-color: $white;
+  // }
+
+  // .community-field {
+  //   background-color: $light-black;
+  //   padding: 1rem;
+  //   border-radius: 8px;
+  // }
+
+  // .community-button {
+  //   display: block;
+  //   text-align: center;
+  // }
+}
