@@ -223,7 +223,7 @@
           "avt2": "profilePic5.png",
           "text": "@CosmicArtisan , @Sculptor",
           "price": "1.35",
-          "className": "desktop"
+          "className": "mobile"
         }'
       ></include>
       <include
@@ -346,7 +346,21 @@
             "avt2": "profilePic12.png",
             "text": "@LunarArt , @Robotica",
             "price": "2.32",
-          "className": "desktop"
+          "className": "tablet"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+          "name": "Illuminated Enigma",
+          "heart": "heart_active.svg",
+          "img": "nft_enigma.jpeg",
+          "avt1": "profilePic8.png",
+          "avt2": "profilePic9.png",
+          "text": "@EtherFlow , @NanoNebula",
+          "price": "2.05",
+          "className": "hide"
         }'
       ></include>
     </main>
@@ -363,12 +377,12 @@
       <figure class="community-image">
         <picture>
           <source
-            media="(max-width: 1024px)"
-            srcset="../assets/images/tablet/community_card.png"
+            media="(max-width: 992px)"
+            srcset="../assets/images/mobile/community_card.png"
           />
           <source
-            media="(max-width: 1024px)"
-            srcset="../assets/images/mobile/community_card.png"
+            media="(max-width: 1280px)"
+            srcset="../assets/images/tablet/community_card.png"
           />
           <img
             src="../assets/images/desktop/community_card.png"
