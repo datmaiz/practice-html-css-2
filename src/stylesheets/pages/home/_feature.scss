@@ -18,22 +18,51 @@
     @include center-vertical;
     cursor: pointer;
   }
+
+  @include xxl {
+    .feature-title {
+      font-size: 2.8rem;
+    }
+  }
+
+  @include md {
+    .feature-navigate {
+      img {
+        display: none;
+      }
+    }
+
+    .feature-navigate:before {
+      @include font(1.2rem, 400);
+      content: 'See more';
+      display: inline-block;
+      color: $primary-color;
+    }
+
+    .feature-navigate:hover:before {
+      text-decoration: underline;
+    }
+  }
 }
 
 .nft-cards {
   margin-top: 2.4rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 2.4rem;
+  background-color: $white;
+  border-radius: 1.5rem;
 
   .nft-card {
     @include slow;
-    border: 1px solid transparent;
+    border: 1px solid $light-black;
     padding: 1.2rem;
     display: flex;
     flex-direction: column;
     flex: 1;
     cursor: pointer;
     border-radius: 1.5rem;
+    background-color: $white;
   }
 
   .nft-card:hover {
@@ -132,5 +161,34 @@
     @include font(12px, 400);
     padding: 8px 12px;
     border-radius: 1.5rem;
+  }
+
+  @include xxl {
+    grid-template-columns: repeat(3, 1fr);
+
+    .tablet {
+      display: none;
+    }
+  }
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    background-color: transparent;
+    gap: 1.2rem;
+
+    .mobile {
+      display: none;
+    }
+
+    .nft-card-img {
+      width: 100%;
+    }
+  }
+
+  @include sm {
+    grid-template-columns: 1fr;
   }
 }

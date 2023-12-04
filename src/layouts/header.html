@@ -1,9 +1,16 @@
 <header class="header">
   <div class="header-left">
-    <img src="../assets/icons/logo.svg" alt="logo" />
+    <picture>
+      <source
+        media="(max-width: 768px)"
+        srcset="../assets/images/mobile/logo_mobile.png"
+      />
+      <img src="../assets/icons/logo.svg" alt="logo" />
+    </picture>
+    <!-- <img src="../assets/images/mobile/logo_mobile.png" alt="logo" /> -->
     <h3 class="logo-name">NFT logoplace</h3>
     <div class="search">
-      <input type="text" class="search-input" placeholder="search" />
+      <input type="text" class="search-input" placeholder="Search" />
       <img
         src="../assets/icons/search.svg"
         alt="seach icon"
@@ -32,4 +39,7 @@
       />
     </figure>
   </div>
+  <figure class="menu-icon">
+    <img src="../assets/icons/menu.svg" alt="Menu" />
+  </figure>
 </header>
