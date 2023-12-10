@@ -13,7 +13,7 @@
   }
 
   @include md {
-    padding: 1.2rem;
+    padding: 1.8rem 2.7rem;
   }
 }
 
@@ -90,6 +90,12 @@
     cursor: pointer;
   }
 
+  .noti-btn:hover {
+    .noti-icon {
+      animation: shakes 1s linear infinite;
+    }
+  }
+
   .noti-icon {
     position: relative;
   }
@@ -125,5 +131,26 @@
 
   @include xxl {
     display: block;
+  }
+}
+
+@keyframes shakes {
+
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  50% {
+    transform: rotate(10deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(-10deg);
   }
 }

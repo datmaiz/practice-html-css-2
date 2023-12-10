@@ -59,15 +59,14 @@
 
   @include md {
     grid-template-columns: 1fr 1fr;
-    place-items: center;
-    width: fit-content;
-    margin-inline: auto;
     background-color: transparent;
     gap: 1.2rem;
   }
 
   @include sm {
     grid-template-columns: 1fr;
+    max-width: 32rem;
+    margin-inline: auto;
   }
 
   @include xxl {
@@ -80,9 +79,6 @@
 
   @include md {
     grid-template-columns: 1fr 1fr;
-    place-items: center;
-    width: fit-content;
-    margin-inline: auto;
     background-color: transparent;
     gap: 1.2rem;
 

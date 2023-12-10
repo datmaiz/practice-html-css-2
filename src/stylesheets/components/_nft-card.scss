@@ -68,8 +68,13 @@
 
   .name {
     @include font(2.1rem, 600);
+    @include limitText(2);
     color: $primary-color;
     line-height: 1.6;
+  }
+
+  .text {
+    @include limitText(1);
   }
 
   .id {
@@ -79,7 +84,8 @@
   }
 
   .images {
-    width: 27px;
+    max-width: 27px;
+    width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
   }
